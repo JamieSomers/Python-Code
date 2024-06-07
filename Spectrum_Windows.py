@@ -9,7 +9,7 @@ import numpy as np; # type: ignore
 import jaraco.collections; # type: ignore
 import pylab; # type: ignore
 
-new_list = []
+new_list = [] #Creates an empty list
 
 # the folder the data is located in
 directory = 'C:/Users/JamieSomers/Desktop/Incident Spectra 04-06-2024'
