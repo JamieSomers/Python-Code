@@ -32,7 +32,7 @@ with open(f'{directory}/wl-0deg.txt','r') as f:
         wly.append(row[1])
 f.close()
 
-with open(f'{directory}//pink-20deg.txt','r') as f:
+with open(f'{directory}//pink-10deg.txt','r') as f:
     tx,ty = [], []
     for line in f:
         line = line.strip()
@@ -50,7 +50,7 @@ yhat = savitzky_golay(transmittance, 51, 5) # window size 51, polynomial order 3
 # plots the data
 plt.figure(figsize=(4,2.25))
 plt.plot(tx, yhat)
-plt.title(f'Complex Grating 20°')
+plt.title(f'Complex Grating 10°')
 plt.ylim(0, 1.1)
 plt.ylabel('Transmittance')
 plt.xlabel('Wavelength (nm)')
@@ -60,6 +60,6 @@ plt.xlim([400, 800])
 
     # saves the graphs, adjust dimensions to get clearer images/xticks are overlapping
     #plt.savefig(f'{directory}Sample {i} p0 t div ref')
-plt.savefig(f'{directory}/pink-20deg.png', dpi=300)
+plt.savefig(f'{directory}/pink-10deg.png', dpi=300)
 plt.show()
 # %%
