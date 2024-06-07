@@ -23,7 +23,7 @@ with open(f'{directory}/bg-0deg.txt','r') as f:
         bgy.append(row[1])
 f.close()
 
-with open(f'{directory}/wl-0deg.txt','r') as f:
+with open(f'{directory}/wl-20deg.txt','r') as f:
     wlx,wly = [], []
     for line in f:
         line = line.strip()
@@ -32,7 +32,7 @@ with open(f'{directory}/wl-0deg.txt','r') as f:
         wly.append(row[1])
 f.close()
 
-with open(f'{directory}//pink-0deg.txt','r') as f:
+with open(f'{directory}//pink-20deg.txt','r') as f:
     tx,ty = [], []
     for line in f:
         line = line.strip()
@@ -50,7 +50,7 @@ yhat = savitzky_golay(transmittance, 51, 5) # window size 51, polynomial order 3
 # plots the data
 plt.figure(figsize=(4,2.25))
 plt.plot(tx, yhat)
-plt.title(f'Complex Grating 0°')
+plt.title(f'Complex Grating 20°')
 plt.ylim(0, 1.1)
 plt.ylabel('Transmittance')
 plt.xlabel('Wavelength (nm)')
