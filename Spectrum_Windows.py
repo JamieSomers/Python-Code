@@ -23,7 +23,7 @@ with open(f'{directory}/bg-0deg.txt','r') as f:
         bgy.append(row[1])
 f.close()
 
-with open(f'{directory}/wl-20deg.txt','r') as f:
+with open(f'{directory}/wl-0deg.txt','r') as f:
     wlx,wly = [], []
     for line in f:
         line = line.strip()
