@@ -60,6 +60,6 @@ plt.xlim([400, 800])
 
     # saves the graphs, adjust dimensions to get clearer images/xticks are overlapping
     #plt.savefig(f'{directory}Sample {i} p0 t div ref')
-plt.savefig(f'{directory}/pink-0deg.png', dpi=300)
+plt.savefig(f'{directory}/pink-20deg.png', dpi=300)
 plt.show()
 # %%
